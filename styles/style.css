@@ -15,7 +15,6 @@
 */
 
 .page {
-  max-width: 700px;
   margin: auto;
   color: var(--accent-color);
   font-family: var(--main-font), sans-serif;
@@ -32,8 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-start: 100px;
-  margin-block-end: 100px;
+  margin: 100px auto;
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font);
   font-weight: 400;
@@ -41,6 +39,11 @@
   line-height: normal;
   text-transform: uppercase;
   background-color: var(--background-color);
+}
+
+.header,
+.content {
+  max-width: 700px;
 }
 
 .header-logo {
@@ -124,6 +127,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin: auto;
 }
 
 .card {
@@ -154,7 +158,7 @@
   height: 100%;
   border: none;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .card__logo {
@@ -287,8 +291,8 @@
 .save__button {
   position: relative;
   display: block;
-  width: 339px;
-  height: 55px;
+  min-width: 339px;
+  min-height: 55px;
   margin: 50px auto 0;
   border: 2px solid var(--accent-color);
   padding: 0;
@@ -435,8 +439,8 @@
   }
 
   .save__button {
-    width: 310px;
-    height: 84px;
+    min-width: 310px;
+    min-height: 84px;
   }
 
   .save__button-image {
