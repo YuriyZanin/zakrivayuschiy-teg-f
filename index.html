@@ -566,17 +566,17 @@
           </div>
         </div>
       </article>
+      <button
+        type="button"
+        class="save__button decorated-button"
+        onclick="window['dialog-id'].showModal();"
+      >
+        <svg class="save__button-image" viewBox="0 0 21 21">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <span class="save__button-label">Сохранить на&nbsp;память</span>
+      </button>
     </main>
-    <button
-      type="button"
-      class="save__button decorated-button"
-      onclick="window['dialog-id'].showModal();"
-    >
-      <svg class="save__button-image" viewBox="0 0 21 21">
-        <use href="./svg/floppy.svg#floppy" />
-      </svg>
-      <span class="save__button-label">Сохранить на&nbsp;память</span>
-    </button>
     <dialog class="dialog" id="dialog-id">
       <form class="dialog-form" method="dialog">
         <div class="dialog-content">
